@@ -2,6 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 package com.pbo.fareru.minpro.pbo.personalsubscriptiontracker;
+import model.Langganan;
+import model.MetodePembayaran;
+import model.Layanan;
 import java.util.ArrayList;
 import java.util.Scanner;
 /**
