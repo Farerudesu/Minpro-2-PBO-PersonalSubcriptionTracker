@@ -6,9 +6,9 @@ public class MetodePembayaran {
     private String jenis;
 
     public MetodePembayaran(String idMetode, String namaMetode, String jenis) {
-        this.idMetode = idMetode;
-        this.namaMetode = namaMetode;
-        this.jenis = jenis;
+        setIdMetode(idMetode);
+        setNamaMetode(namaMetode);
+        setJenis(jenis);
     }
 
     public String getIdMetode() {

@@ -8,7 +8,7 @@ public class LanggananProduktivitas extends Langganan {
                                   MetodePembayaran metode, int tanggalTagihan,
                                   String kapasitasStorage, int lisensiUser) {
         super(idSubscription, layanan, hargaBulanan, metode, tanggalTagihan);
-        this.kapasitasStorage = kapasitasStorage;
+        setKapasitasStorage(kapasitasStorage);
         setLisensiUser(lisensiUser);
     }
 

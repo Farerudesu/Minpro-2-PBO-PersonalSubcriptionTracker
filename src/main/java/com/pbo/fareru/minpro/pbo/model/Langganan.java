@@ -9,12 +9,12 @@ public class Langganan {
     private String status;
 
     public Langganan(String idSubscription, Layanan layanan, double hargaBulanan, MetodePembayaran metode, int tanggalTagihan) {
-        this.idSubscription = idSubscription;
-        this.layanan = layanan;
+        setIdSubscription(idSubscription);
+        setLayanan(layanan);
         setHargaBulanan(hargaBulanan);
-        this.metode = metode;
+        setMetode(metode);
         setTanggalTagihan(tanggalTagihan);
-        this.status = "Aktif";
+        setStatus("Aktif");
     }
 
     public String getIdSubscription() {

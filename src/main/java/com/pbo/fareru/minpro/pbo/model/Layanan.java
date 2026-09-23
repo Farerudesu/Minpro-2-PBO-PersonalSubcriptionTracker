@@ -6,9 +6,9 @@ public class Layanan {
     private String kategori;
 
     public Layanan(String idLayanan, String namaLayanan, String kategori) {
-        this.idLayanan = idLayanan;
-        this.namaLayanan = namaLayanan;
-        this.kategori = kategori;
+        setIdLayanan(idLayanan);
+        setNamaLayanan(namaLayanan);
+        setKategori(kategori);
     }
 
     public String getIdLayanan() {

@@ -8,7 +8,7 @@ public class LanggananStreaming extends Langganan {
                               MetodePembayaran metode, int tanggalTagihan,
                               String kualitasResolusi, int batasLayar) {
         super(idSubscription, layanan, hargaBulanan, metode, tanggalTagihan);
-        this.kualitasResolusi = kualitasResolusi;
+        setKualitasResolusi(kualitasResolusi);
         setBatasLayar(batasLayar);
     }
 

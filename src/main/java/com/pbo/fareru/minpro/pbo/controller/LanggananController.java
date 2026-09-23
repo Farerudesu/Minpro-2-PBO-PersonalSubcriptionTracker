@@ -257,10 +257,11 @@ public class LanggananController {
         System.out.println("1. Ubah Harga Bulanan");
         System.out.println("2. Ubah Tanggal Tagihan");
         System.out.println("3. Ubah Status (Aktif / Nonaktif)");
-        System.out.println("4. Ubah Atribut Spesifik Kategori");
-        System.out.println("5. Batal");
+        System.out.println("4. Ubah Metode Pembayaran");
+        System.out.println("5. Ubah Atribut Spesifik Kategori");
+        System.out.println("6. Batal");
 
-        int pilihan = InputValidator.bacaInt(scanner, "Pilih Aksi (1-5): ", 1, 5);
+        int pilihan = InputValidator.bacaInt(scanner, "Pilih Aksi (1-6): ", 1, 6);
 
         switch (pilihan) {
             case 1:
@@ -284,6 +285,13 @@ public class LanggananController {
                 break;
 
             case 4:
+                view.tampilkanHeader("PILIH METODE PEMBAYARAN BARU");
+                MetodePembayaran metodeBaru = tentukanMetodePembayaran();
+                langganan.setMetode(metodeBaru);
+                view.tampilkanPesanSukses("Metode pembayaran berhasil diubah menjadi " + metodeBaru.getNamaMetode() + "!");
+                break;
+
+            case 5:
                 if (langganan instanceof LanggananStreaming) {
                     LanggananStreaming streaming = (LanggananStreaming) langganan;
                     System.out.println("1. Ubah Kualitas Streaming (" + streaming.getKualitasResolusi() + ")");
@@ -317,7 +325,7 @@ public class LanggananController {
                 }
                 break;
 
-            case 5:
+            case 6:
                 view.tampilkanPesan("Perubahan dibatalkan.");
                 break;
         }
