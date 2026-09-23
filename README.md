@@ -45,9 +45,6 @@ Fitur utama aplikasi:
 ---
 
 ## 2. Penjelasan Alur Program
-
-Berikut alur jalannya program dari awal hingga selesai:
-
 ```
 [Start Program] -> [Inisialisasi Controller & View] -> [Isi Dummy Data ke ArrayList]
        |
