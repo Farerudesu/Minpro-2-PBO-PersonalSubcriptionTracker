@@ -349,7 +349,7 @@ Method dengan nama yang sama tetapi memiliki parameter yang berbeda dalam satu k
 
 ## 6. Mekanisme Validasi Input & Standar Kode
 
-### Validasi Input Anti-Crash
+### Validasi Input 
 Semua input melalui kelas `InputValidator` untuk menjamin program tidak berhenti tiba-tiba (*crash*) akibat kesalahan pengetikan pengguna:
 1. **Penanganan Kesalahan Tipe Data**:
    Input angka dibungkus dengan blok `try-catch` (`NumberFormatException`). Jika pengguna memasukkan huruf saat diminta angka, sistem memberikan peringatan yang jelas dan meminta input ulang secara aman.
